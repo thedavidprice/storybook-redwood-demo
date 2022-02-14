@@ -11,6 +11,7 @@ export const standard = () => ({
       linkedinUrl: '#',
     },
     {
+      id: 2,
       name: 'Courtney Henry',
       role: 'Designer',
       imageUrl:
@@ -19,6 +20,7 @@ export const standard = () => ({
       linkedinUrl: '#',
     },
     {
+      id: 3,
       name: 'Tom Cook',
       role: 'Director, Product Development',
       imageUrl:

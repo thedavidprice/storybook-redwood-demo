@@ -1,19 +1,8 @@
 import TeamMember from './TeamMember'
+import { standard } from '../TeamMembersCell/TeamMembersCell.mock'
 
 export const generated = () => {
-  return (
-    <TeamMember
-      teamMember={{
-        id: 1,
-        name: 'Lindsay Walton',
-        role: 'Front-end Developer',
-        imageUrl:
-          'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-        twitterUrl: '#',
-        linkedinUrl: '#',
-      }}
-    />
-  )
+  return <TeamMember teamMember={standard().teamMembers[1]} />
 }
 
 export default { title: 'Components/TeamMember' }
