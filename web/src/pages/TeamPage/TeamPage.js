@@ -10,6 +10,22 @@ const people = [
     twitterUrl: '#',
     linkedinUrl: '#',
   },
+  {
+    name: 'Courtney Henry',
+    role: 'Designer',
+    imageUrl:
+      'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    twitterUrl: '#',
+    linkedinUrl: '#',
+  },
+  {
+    name: 'Tom Cook',
+    role: 'Director, Product Development',
+    imageUrl:
+      'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    twitterUrl: '#',
+    linkedinUrl: '#',
+  },
   // More people...
 ]
 
@@ -30,10 +46,7 @@ const TeamPage = () => {
                 dolor ultricies donec risus sodales. Tempus quis et.
               </p>
             </div>
-            <ul
-              role="list"
-              className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
-            >
+            <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
               {people.map((person) => (
                 <li key={person.name}>
                   <div className="space-y-4">
@@ -50,7 +63,7 @@ const TeamPage = () => {
                         <h3>{person.name}</h3>
                         <p className="text-indigo-600">{person.role}</p>
                       </div>
-                      <ul role="list" className="flex space-x-5">
+                      <ul className="flex space-x-5">
                         <li>
                           <a
                             href={person.twitterUrl}
