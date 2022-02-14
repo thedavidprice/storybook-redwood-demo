@@ -1,5 +1,5 @@
 import { MetaTags } from '@redwoodjs/web'
-import TeamCell from '../../components/TeamCell'
+import TeamMembersCell from '../../components/TeamMembersCell'
 
 const TeamPage = () => {
   return (
@@ -18,7 +18,7 @@ const TeamPage = () => {
                 dolor ultricies donec risus sodales. Tempus quis et.
               </p>
             </div>
-            <TeamCell />
+            <TeamMembersCell />
           </div>
         </div>
       </div>

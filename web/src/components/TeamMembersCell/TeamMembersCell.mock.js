@@ -1,6 +1,6 @@
 // Define your own mock data here:
 export const standard = () => ({
-  team: [
+  teamMembers: [
     {
       id: 1,
       name: 'Lindsay Walton',

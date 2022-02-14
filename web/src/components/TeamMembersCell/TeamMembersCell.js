@@ -1,8 +1,8 @@
 import TeamMember from '../TeamMember/TeamMember'
 
 export const QUERY = gql`
-  query FindTeamQuery($id: Int!) {
-    team: team(id: $id) {
+  query FindTeamMembersQuery {
+    teamMembers {
       id
       name
       role
@@ -21,12 +21,12 @@ export const Failure = ({ error }) => (
   <div style={{ color: 'red' }}>Error: {error.message}</div>
 )
 
-export const Success = ({ team }) => {
+export const Success = ({ teamMembers }) => {
   return (
     <div>
       <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
-        {team.map((person) => (
-          <TeamMember key={person.id} person={person} />
+        {teamMembers?.map((teamMember) => (
+          <TeamMember key={teamMember.id} teamMember={teamMember} />
         ))}
       </ul>
     </div>

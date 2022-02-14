@@ -3,7 +3,7 @@ import TeamMember from './TeamMember'
 export const generated = () => {
   return (
     <TeamMember
-      person={{
+      teamMember={{
         id: 1,
         name: 'Lindsay Walton',
         role: 'Front-end Developer',

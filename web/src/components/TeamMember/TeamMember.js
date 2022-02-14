@@ -1,25 +1,25 @@
-const TeamMember = ({ person }) => {
+const TeamMember = ({ teamMember }) => {
   return (
     <div>
-      <li key={person.id}>
+      <li key={teamMember.id}>
         <div className="space-y-4">
           <div className="aspect-w-3 aspect-h-2">
             <img
               className="object-cover shadow-lg rounded-lg"
-              src={person.imageUrl}
+              src={teamMember.imageUrl}
               alt=""
             />
           </div>
 
           <div className="space-y-2">
             <div className="text-lg leading-6 font-medium space-y-1">
-              <h3>{person.name}</h3>
-              <p className="text-indigo-600">{person.role}</p>
+              <h3>{teamMember.name}</h3>
+              <p className="text-indigo-600">{teamMember.role}</p>
             </div>
             <ul className="flex space-x-5">
               <li>
                 <a
-                  href={person.twitterUrl}
+                  href={teamMember.twitterUrl}
                   className="text-gray-400 hover:text-gray-500"
                 >
                   <span className="sr-only">Twitter</span>
@@ -35,7 +35,7 @@ const TeamMember = ({ person }) => {
               </li>
               <li>
                 <a
-                  href={person.linkedinUrl}
+                  href={teamMember.linkedinUrl}
                   className="text-gray-400 hover:text-gray-500"
                 >
                   <span className="sr-only">LinkedIn</span>
